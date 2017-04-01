@@ -60,6 +60,13 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/project', (req, res) => {
+    res.render('project.hbs', {
+        pageTitle: 'Project Page',
+        porfolio: 'Porfolio here'
+    });
+});
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMsg: 'Unable to browser!'
